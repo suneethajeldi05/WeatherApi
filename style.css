@@ -1,0 +1,65 @@
+body {
+    background: url('clouds.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Add a semi-transparent layer to apply blur */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Light white transparency */
+    backdrop-filter: blur(10px); /* Blur effect */
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+    background: linear-gradient(to bottom right, #00c6ff, #0072ff);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 80%;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.weather-info img {
+    width: 70px;
+    padding: 30px;
+}
